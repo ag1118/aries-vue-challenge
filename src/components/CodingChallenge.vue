@@ -1,20 +1,20 @@
 <template>
   <div>
-    <h1>Options Profit Calculator</h1>
-    {{ "Your Code Here" }}
+    <h1 class="text-3xl font-semibold mb-4">Options Profit Calculator</h1>
+    <OptionsProfitCalculator :initialOptions="optionsData" />
   </div>
 </template>
 
 <script>
+import OptionsProfitCalculator from './OptionsProfitCalculator'
+
 export default {
   name: 'CodingChallenge',
   props: {
     optionsData: Array
-  }
-  // Your code here
+  },
+  components: {
+    OptionsProfitCalculator
+  },
 }
 </script>
-
-<style scoped>
-/* Your Code Here */
-</style>
